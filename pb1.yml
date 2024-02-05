@@ -1,0 +1,9 @@
+---
+- name: Update n3 servers
+  hosts: n3
+
+  tasks:
+  - name: Ensure directory created 
+    file:
+      path: /home/ubuntu/n3-dir
+      state: directory
